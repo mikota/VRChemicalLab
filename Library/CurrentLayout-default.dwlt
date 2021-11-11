@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 341
+  controlID: 25558
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 346
+  controlID: 25457
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 228
+  controlID: 25559
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -433,9 +433,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 15.467386, y: -1.1151462, z: -20.5486}
+    m_Target: {x: 5.8842726, y: -10.479917, z: -15.294268}
     speed: 2
-    m_Value: {x: 15.467386, y: -1.1151462, z: -20.5486}
+    m_Value: {x: 5.8842726, y: -10.479917, z: -15.294268}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -482,9 +482,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.02100632, y: 0.98972535, z: -0.096947506, w: 0.118213326}
+    m_Target: {x: 0.01303258, y: -0.96167773, z: 0.2710623, w: 0.07078701}
     speed: 2
-    m_Value: {x: 0.02100632, y: 0.98972535, z: -0.096947506, w: 0.118213326}
+    m_Value: {x: 0.013115219, y: -0.95960206, z: 0.27203172, w: 0.07064473}
   m_Size:
     m_Target: 12.0397
     speed: 2
@@ -673,7 +673,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -3638
+  m_LastSelectedObjectID: -46554
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -702,10 +702,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 2992}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 22fbffff
+      scrollPos: {x: 0, y: 6256}
+      m_SelectedIDs: 264affff
+      m_LastClickedID: -46554
+      m_ExpandedIDs: 2281feff2e81feff264affff0a57ffffd05dffff92eaffffaaeaffff1aebffff5eebffff5aeeffffaaefffff0cf2ffff18f3ffff22fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -757,8 +757,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
-    m_ClassNames:
-    - Model
+    m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
     m_VersionControlStates: []
@@ -767,8 +766,9 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 0
-    m_Folders: []
+    m_SearchArea: 1
+    m_Folders:
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
@@ -776,13 +776,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: D:\Unity\Projekti\Backup\My project (2)
+  m_LastProjectPath: D:\Unity\Projekti\VRChemicalLab
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 02ca9a3b
-    m_LastClickedID: 1000000002
+    m_SelectedIDs: c85d0000
+    m_LastClickedID: 24008
     m_ExpandedIDs: 00000000c85d0000ca5d0000cc5d0000ce5d0000d05d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -863,7 +863,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 300}
+    m_ScrollPosition: {x: 0, y: 280}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 126
