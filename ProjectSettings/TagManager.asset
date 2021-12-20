@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - LiquidCollector
   layers:
   - Default
   - TransparentFX
@@ -11,15 +12,15 @@ TagManager:
   - Player
   - Water
   - UI
-  - Grab Ignore Ray
+  - Drawer
   - Ground
-  - Postprocessing
+  - Teleportation
   - Grabbables
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Light
+  - Dye
+  - Sodium
+  - Liquid Collider
+  - Glass
   - 
   - 
   - 

@@ -9,8 +9,8 @@ public class TeleportationManager : MonoBehaviour
     [SerializeField] private InputActionAsset actionAsset;
     [SerializeField] private XRRayInteractor rayInteractor;
     [SerializeField] private TeleportationProvider provider;
-    private InputAction _thumbstick;
-    private bool _isActive;
+    private InputAction primaryButton;
+    private bool isActive;
 
     void Start()
     {
@@ -20,50 +20,51 @@ public class TeleportationManager : MonoBehaviour
         activate.Enable();
         activate.performed += OnTeleportActivate;
         
-        var cancel = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
+        var cancel = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Cancel");
         cancel.Enable();
         cancel.performed += OnTeleportCancel;
         
-        _thumbstick = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
-        _thumbstick.Enable();
+        primaryButton = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Mode Activate");
+        primaryButton.Enable();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!_isActive)
+        if (!isActive)
             return;
 
-        if (_thumbstick.triggered)
+        if (primaryButton.triggered)
+            rayInteractor.enabled = true;
             return;
 
         if(!rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
         {
             rayInteractor.enabled = false;
-            _isActive = false;
+            isActive = false;
             return;
         }
 
         TeleportRequest request = new TeleportRequest()
         {
             destinationPosition = hit.point
-            //destinationRotation = ?
         };
 
         provider.QueueTeleportRequest(request);
-        rayInteractor.enabled = false;
-        _isActive = false;
+        //rayInteractor.enabled = false;
+        //isActive = false;
+
     }
 
     private void OnTeleportActivate(InputAction.CallbackContext context)
     {
         rayInteractor.enabled = true;
-        _isActive = true;
+        isActive = true;
     }
 
     private void OnTeleportCancel(InputAction.CallbackContext context)
     {
         rayInteractor.enabled = false;
-        _isActive = false;
+        isActive = false;
     }
 }
